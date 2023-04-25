@@ -1,7 +1,4 @@
-<!--lint disable awesome-git-repo-age-->
-<!--lint disable awesome-github-->
-<!--lint disable awesome-contributing-->
-<!--lint ignore awesome-badge-->
+<!--lint disable awesome-git-repo-age awesome-github awesome-contributing awesome-badge-->
 # Awesome Fresh
 
 A curated list of awesome things related to [fresh](https://github.com/denoland/fresh)
