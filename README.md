@@ -1,4 +1,6 @@
 <!--lint disable awesome-git-repo-age-->
+<!--lint disable awesome-github-->
+<!--lint disable awesome-contributing-->
 <!--lint ignore awesome-badge-->
 # Awesome Fresh
 
