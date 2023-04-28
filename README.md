@@ -18,6 +18,8 @@ A curated list of awesome things related to [fresh](https://github.com/denoland/
 
 ## Frameworks
 
+The following frameworks provide Fresh integration.
+
 <!--lint ignore awesome-list-item-->
 - [Danet](https://github.com/Savory/Danet) - A Savory web framework for Deno heavily inspired by Nest
 <!--lint enable awesome-list-item-->
