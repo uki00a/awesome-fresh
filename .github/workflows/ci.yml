@@ -16,7 +16,7 @@ jobs:
       - name: Set up Deno
         uses: denoland/setup-deno@main
         with:
-          deno-version: 1.32.5
+          deno-version: 1.33.3
       - uses: actions/cache@v3
         with:
           path: |
