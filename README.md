@@ -15,6 +15,7 @@ A curated list of awesome things related to [fresh](https://github.com/denoland/
 <!--lint ignore awesome-list-item-->
 - [fresh-seo](https://github.com/xstevenyung/fresh-seo) - The fastest way :zap: to create sitemap and robots.txt in your Deno Fresh project :lemon:
 <!--lint enable awesome-list-item-->
+- [TSX Tabler Icons](https://github.com/hashrock/tabler-icons-tsx) - Easy to use Tabler Icons in your Fresh app. Just import the icons.
 
 ## Frameworks
 
