@@ -26,3 +26,7 @@ jobs:
       - name: Run awesome-lint
         run:
           deno run --allow-read --allow-env lint.js
+      - name: Run deno fmt and lint
+        run:
+          deno fmt --check
+          deno lint

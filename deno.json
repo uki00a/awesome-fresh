@@ -9,6 +9,9 @@
     "jsxImportSource": "preact"
   },
   "fmt": {
-    "exclude": ["fresh.gen.ts"]
+    "exclude": [
+      "fresh.gen.ts",
+      "README.md"
+    ]
   }
 }
