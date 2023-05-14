@@ -1,3 +1,9 @@
+const { stdout: gitOutput } = await new Deno.Command("git", {
+  args: ["rev-parse", "HEAD"],
+}).output();
+const revision = new TextDecoder().decode(gitOutput).trim();
+Deno.env.set("DENO_DEPLOYMENT_ID", revision);
+
 import("./main.ts");
 
 await new Promise((ok) => {
