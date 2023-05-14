@@ -1,6 +1,8 @@
 <!--lint disable awesome-git-repo-age awesome-github awesome-contributing awesome-badge-->
 # Awesome Fresh
 
+[![GitHub Stars](https://img.shields.io/github/stars/uki00a/awesome-fresh?style=social)](https://github.com/uki00a/awesome-fresh)
+
 A curated list of awesome things related to [fresh](https://github.com/denoland/fresh)
 
 ## Contents
