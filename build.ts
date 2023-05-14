@@ -10,7 +10,13 @@ await new Promise((ok) => {
   setTimeout(ok, 100);
 });
 
-const html = await fetch("http://localhost:8000").then((res) => res.text());
+const res = await fetch("http://localhost:8000");
+if (!res.ok) {
+  console.error("Failed to fetch `/`");
+  Deno.exit(1);
+}
+
+const html = await res.text();
 const buildDir = new URL("./build", import.meta.url).pathname;
 await Deno.mkdir(buildDir, { recursive: true });
 await Deno.writeTextFile(`${buildDir}/index.html`, html);
