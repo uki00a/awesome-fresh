@@ -1,4 +1,4 @@
-import { default as awesomeLint } from "npm:awesome-lint@0.18.2";
+import { default as awesomeLint } from "awesome-lint";
 import { default as process } from "node:process";
 
 await awesomeLint.report({ filename: "README.md" });
