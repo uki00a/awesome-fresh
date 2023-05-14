@@ -7,12 +7,10 @@ on:
     branches:
       - "main"
 jobs:
-  check:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       - name: Get deno version
         id: deno-version
         run: |
@@ -37,3 +35,9 @@ jobs:
       - name: Build
         run: |
           deno task build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.event_name == 'push' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
