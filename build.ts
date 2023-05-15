@@ -7,7 +7,7 @@ Deno.env.set("DENO_DEPLOYMENT_ID", revision);
 import("./main.ts");
 
 await new Promise((ok) => {
-  setTimeout(ok, 100);
+  setTimeout(ok, 1000);
 });
 
 const res = await fetch("http://localhost:8000");
