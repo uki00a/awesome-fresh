@@ -1,7 +1,10 @@
 {
   "tasks": {
     "start": "deno run -A --watch=static/,routes/ dev.ts",
-    "build": "deno run --allow-run --allow-env --allow-read --allow-net --allow-write=build build.ts"
+    "build": "deno run --allow-run --allow-env --allow-read --allow-net --allow-write=build tools/build.ts",
+    "awesome-lint": "deno run --allow-read --allow-env tools/awesome-lint.js",
+    "lint": "deno fmt --check && deno lint",
+    "check": "deno task lint && deno task awesome-lint"
   },
   "lock": false,
   "compilerOptions": {
