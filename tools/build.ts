@@ -8,7 +8,7 @@ Deno.env.set("PORT", "8000");
 import(import.meta.resolve("../main.ts"));
 
 await new Promise((ok) => {
-  setTimeout(ok, 3000);
+  setTimeout(ok, 1000);
 });
 
 const res = await fetch("http://localhost:8000");
