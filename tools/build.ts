@@ -4,7 +4,7 @@ const { stdout: gitOutput } = await new Deno.Command("git", {
 const revision = new TextDecoder().decode(gitOutput).trim();
 Deno.env.set("DENO_DEPLOYMENT_ID", revision);
 
-import("./main.ts");
+import(import.meta.resolve("../main.ts"));
 
 await new Promise((ok) => {
   setTimeout(ok, 1000);
