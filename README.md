@@ -20,7 +20,8 @@ A curated list of awesome things related to [fresh](https://github.com/denoland/
 <!--lint enable awesome-list-item-->
 - [TSX Tabler Icons](https://github.com/hashrock/tabler-icons-tsx) - Easy to use Tabler Icons in your Fresh app. Just import the icons.
 - [react-icons](https://react-icons.deno.dev/) - React icons for deno Fresh contains more than 30 000 SVG.
- 
+- [fresh-tailwindcss](https://github.com/roonie007/fresh-tailwindcss) - Fresh plugin for TailwindCSS
+
 ## Frameworks
 
 The following frameworks provide Fresh integration.
