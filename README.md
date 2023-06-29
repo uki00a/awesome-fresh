@@ -17,10 +17,10 @@ A curated list of awesome things related to [fresh](https://github.com/denoland/
 - [fresh-session](https://github.com/xstevenyung/fresh-session) - Dead simple cookie-based session for Deno Fresh.
 <!--lint ignore awesome-list-item-->
 - [fresh-seo](https://github.com/xstevenyung/fresh-seo) - The fastest way :zap: to create sitemap and robots.txt in your Deno Fresh project :lemon:
+- [fresh-tailwindcss](https://github.com/roonie007/fresh-tailwindcss) - Fresh plugin for TailwindCSS
 <!--lint enable awesome-list-item-->
 - [TSX Tabler Icons](https://github.com/hashrock/tabler-icons-tsx) - Easy to use Tabler Icons in your Fresh app. Just import the icons.
 - [react-icons](https://react-icons.deno.dev/) - React icons for deno Fresh contains more than 30 000 SVG.
-- [fresh-tailwindcss](https://github.com/roonie007/fresh-tailwindcss) - Fresh plugin for TailwindCSS
 
 ## Frameworks
 
