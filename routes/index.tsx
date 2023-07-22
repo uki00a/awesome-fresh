@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import type { Handlers, PageProps } from "$fresh/server.ts";
-import { CSS, render as renderGFM } from "gfm";
+import { CSS, render as renderGFM } from "$gfm";
 
 const gfmStyle = `
 .markdown-body ul { list-style: disc }
