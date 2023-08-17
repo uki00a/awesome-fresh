@@ -6,8 +6,6 @@
 
 import { start } from "$fresh/server.ts";
 import manifest from "./fresh.gen.ts";
+import config from "./fresh.config.ts";
 
-import twindv1 from "$fresh/plugins/twindv1.ts";
-import twindConfig from "./twind.config.ts";
-
-await start(manifest, { plugins: [twindv1(twindConfig)] });
+await start(manifest, config);
