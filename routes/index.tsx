@@ -20,7 +20,6 @@ export default function Index(props: PageProps<string>) {
   return (
     <>
       <Head>
-        <title>Awesome Fresh</title>
         <style id="gfm">{gfmStyle}</style>
       </Head>
       <main
