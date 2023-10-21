@@ -1,2 +1,5 @@
 build
 .vscode
+
+# Fresh build directory
+_fresh/
