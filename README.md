@@ -11,6 +11,7 @@ A curated list of awesome things related to [fresh](https://github.com/denoland/
 - [Frameworks](#frameworks)
 - [Templates](#templates)
 - [Apps](#apps)
+- [Related lists](#related-lists)
 
 ## Modules
 
@@ -45,3 +46,8 @@ The following frameworks provide Fresh integration.
 ## Apps
 
 - [kview](https://github.com/kitsonk/kview) - A web interface for viewing Deno KV stores.
+
+## Related lists
+
+- [awesome-deno](https://github.com/denolib/awesome-deno)
+- [awesome-deno-kv](https://github.com/hashrock/awesome-deno-kv)
