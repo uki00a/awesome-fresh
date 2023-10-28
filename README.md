@@ -51,3 +51,4 @@ The following frameworks provide Fresh integration.
 
 - [awesome-deno](https://github.com/denolib/awesome-deno)
 - [awesome-deno-kv](https://github.com/hashrock/awesome-deno-kv)
+- [awesome-oak](https://github.com/oakserver/awesome-oak)
