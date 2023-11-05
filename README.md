@@ -24,6 +24,7 @@ A curated list of awesome things related to [fresh](https://github.com/denoland/
 <!--lint enable awesome-list-item-->
 - [TSX Tabler Icons](https://github.com/hashrock/tabler-icons-tsx) - Easy to use Tabler Icons in your Fresh app. Just import the icons.
 - [react-icons](https://react-icons.deno.dev/) - React icons for deno Fresh contains more than 30 000 SVG.
+- [Deno KV Insights](https://github.com/cbinzer/deno-kv-insights) - Deno KV Insights is a tool for managing Deno KV database entries.
 - [Deno KV OAuth](https://deno.land/x/deno_kv_oauth) - High-level [OAuth 2.0](https://oauth.net/2/) powered by [Deno KV](https://deno.com/kv).
 
 ## Frameworks
