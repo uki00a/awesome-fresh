@@ -47,6 +47,7 @@ The following frameworks provide Fresh integration.
 ## Apps
 
 - [Deco](https://github.com/deco-cx/deco) - Open-Source web editor based on Preact, Tailwind and TypeScript. The other side of code.
+- [jsr.io](https://github.com/jsr-io/jsr) - The open-source package registry for modern JavaScript and TypeScript.
 - [kview](https://github.com/kitsonk/kview) - A web interface for viewing Deno KV stores.
 - [Netzo](https://netzo.io) - Build business web apps fast, with less resources with an opinionated fresh meta-framework and development platform.
 
