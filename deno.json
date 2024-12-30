@@ -3,12 +3,15 @@
     "dev": "deno run -A --watch=static/,routes/ dev.ts",
     "start": "deno run -A main.ts",
     "update": "deno run -A -r jsr:@fresh/update .",
-    "build:fresh": "deno run -A dev.ts build",
-    "build": "deno run --allow-run --allow-env --allow-read --allow-net --allow-write=build tools/build.ts",
+    "build": "deno run -A dev.ts build",
     "awesome-lint": "deno run --allow-read --allow-env tools/awesome-lint.js",
     "lint": "deno fmt --check && deno lint",
     "check": "deno task lint && deno task awesome-lint",
-    "preview": "deno run -A main.ts"
+    "clean": "rm -rf ./build",
+    "preview": {
+      "command": "deno run -A jsr:@std/http@1.0.12/file-server ./build/static",
+      "dependencies": ["build"]
+    }
   },
   "lock": false,
   "compilerOptions": {
