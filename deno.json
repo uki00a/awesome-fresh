@@ -4,6 +4,10 @@
     "start": "deno run -A main.ts",
     "update": "deno run -A -r jsr:@fresh/update .",
     "build": "deno run -A dev.ts build",
+    "build:gh-pages": {
+      "dependencies": ["build"],
+      "command": "mkdir -p build/static/awesome-fresh && mv build/static/_fresh build/static/awesome-fresh/_fresh && mv build/static/styles.css build/static/awesome-fresh "
+    },
     "awesome-lint": "deno run --allow-read --allow-env --allow-sys=cpus tools/awesome-lint.js",
     "lint": "deno fmt --check && deno lint",
     "check": "deno task lint && deno task awesome-lint",

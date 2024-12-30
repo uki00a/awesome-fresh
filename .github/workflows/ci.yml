@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: |
           deno cache main.ts dev.ts
-          deno task build
+          deno task build:gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' }}

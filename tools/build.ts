@@ -27,7 +27,6 @@ export async function buildHTML(
 
     const html = await res.text();
     const buildDir = new URL("../build", import.meta.url).pathname;
-    await Deno.mkdir(buildDir, { recursive: true });
     await Deno.writeTextFile(`${buildDir}/static/index.html`, html);
   } finally {
     abortController.abort();
