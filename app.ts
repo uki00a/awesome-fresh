@@ -1,11 +1,22 @@
 import { App, fsRoutes, staticFiles } from "fresh";
 import type { State } from "$/server.ts";
 
+interface AppConfig {
+  basePath?: string;
+}
+
+function createAppConfig(): AppConfig {
+  return {
+    basePath: Deno.env.get("APP_BASE_PATH"),
+  };
+}
+
 export async function createApp() {
+  const outDir = "./build";
+  const appConfig = createAppConfig();
   const app = new App<State>({
-    build: {
-      outDir: "./build",
-    },
+    build: { outDir },
+    basePath: appConfig.basePath,
   });
   app.use(staticFiles());
 
