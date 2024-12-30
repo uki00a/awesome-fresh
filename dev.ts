@@ -1,6 +1,21 @@
 #!/usr/bin/env -S deno run -A --watch=static/,routes/
+import { tailwind } from "@fresh/plugin-tailwind";
 
-import dev from "$fresh/dev.ts";
-import config from "./fresh.config.ts";
+import { Builder } from "fresh/dev";
+import { createApp } from "$/app.ts";
 
-await dev(import.meta.url, "./main.ts", config);
+const app = await createApp();
+const builder = new Builder();
+tailwind(builder, app, {});
+if (Deno.args.includes("build")) {
+  await builder.build(app);
+
+  {
+    // Additional custom build logic here.
+    // TODO: Extract this process as a plugin.
+    const { buildHTML } = await import("./tools/build.ts");
+    await buildHTML(app, builder);
+  }
+} else {
+  await builder.listen(app);
+}

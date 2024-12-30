@@ -1,11 +1,6 @@
-/// <reference no-default-lib="true" />
-/// <reference lib="dom" />
-/// <reference lib="dom.iterable" />
-/// <reference lib="dom.asynciterable" />
-/// <reference lib="deno.ns" />
+import { createApp } from "$/app.ts";
 
-import { start } from "$fresh/server.ts";
-import manifest from "./fresh.gen.ts";
-import config from "./fresh.config.ts";
-
-await start(manifest, config);
+const app = await createApp();
+if (import.meta.main) {
+  await app.listen();
+}

@@ -1,22 +1,21 @@
-import { Head } from "$fresh/runtime.ts";
-import { defineRoute } from "$fresh/server.ts";
-import { CSS, render as renderGFM } from "$gfm";
+import { define } from "$/server.ts";
+import { CSS, render as renderGFM } from "@deno/gfm";
 
 const gfmStyle = `
 .markdown-body ul { list-style: disc }
 .markdown-body a { color: teal }
 ${CSS}`;
 
-export default defineRoute(async (req, ctx) => {
+export default define.page(async () => {
   const url = new URL("../README.md", import.meta.url);
   const markdown = await Deno.readTextFile(url);
   const content = renderGFM(markdown, {});
 
   return (
     <>
-      <Head>
+      <head>
         <style id="gfm">{gfmStyle}</style>
-      </Head>
+      </head>
       <main
         data-color-mode="auto"
         data-dark-theme="dark"
