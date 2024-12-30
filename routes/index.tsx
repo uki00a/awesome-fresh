@@ -6,7 +6,7 @@ const gfmStyle = `
 .markdown-body a { color: teal }
 ${CSS}`;
 
-export default define.page(async (req, ctx) => {
+export default define.page(async () => {
   const url = new URL("../README.md", import.meta.url);
   const markdown = await Deno.readTextFile(url);
   const content = renderGFM(markdown, {});
