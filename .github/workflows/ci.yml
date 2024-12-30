@@ -32,11 +32,11 @@ jobs:
           deno task check
       - name: Build
         run: |
-          deno cache fresh.gen.ts main.ts
+          deno cache main.ts dev.ts
           deno task build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./build/static
