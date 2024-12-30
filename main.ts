@@ -1,4 +1,3 @@
-import { App, fsRoutes, staticFiles } from "fresh";
 import { createApp } from "$/app.ts";
 
 const app = await createApp();
