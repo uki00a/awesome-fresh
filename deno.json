@@ -4,7 +4,7 @@
     "start": "deno run -A main.ts",
     "update": "deno run -A -r jsr:@fresh/update .",
     "build": "deno run -A dev.ts build",
-    "awesome-lint": "deno run --allow-read --allow-env tools/awesome-lint.js",
+    "awesome-lint": "deno run --allow-read --allow-env --allow-sys=cpus tools/awesome-lint.js",
     "lint": "deno fmt --check && deno lint",
     "check": "deno task lint && deno task awesome-lint",
     "clean": "rm -rf ./build",
