@@ -20,9 +20,10 @@ export async function buildHTML(
 
   try {
     await listenPromise;
-    const res = await fetch("http://localhost:8000");
+    const basePath = app.config.basePath || "/";
+    const res = await fetch(new URL(basePath, "http://localhost:8000"));
     if (!res.ok) {
-      throw new Error("Failed to fetch `/`");
+      throw new Error(`Failed to fetch \`${basePath}\``);
     }
 
     const html = await res.text();
