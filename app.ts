@@ -1,6 +1,5 @@
 import { App, fsRoutes, staticFiles } from "fresh";
 import type { State } from "$/server.ts";
-import { resolve } from "node:path";
 
 interface AppConfig {
   basePath?: string;
