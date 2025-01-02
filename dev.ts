@@ -2,7 +2,7 @@
 import { tailwind } from "@fresh/plugin-tailwind";
 
 import { Builder } from "fresh/dev";
-import { createApp } from "$/app.ts";
+import { createApp } from "$/server.ts";
 
 const app = await createApp();
 const builder = new Builder();
