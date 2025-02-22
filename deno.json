@@ -43,6 +43,6 @@
     "awesome-lint": "npm:awesome-lint@1.0.0",
     "$/": "./"
   },
-  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
+  "lint": { "rules": { "tags": ["fresh", "react", "recommended"] } },
   "exclude": ["**/_fresh/*"]
 }
