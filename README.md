@@ -43,6 +43,7 @@ The following frameworks provide Fresh integration.
 - [Deno SaaSKit](https://github.com/denoland/saaskit) - A modern SaaS template built on Fresh.
 - [Deno Fresh OpenAI Doc Search Starter](https://github.com/supabase-community/deno-fresh-openai-doc-search) - Template for building your own custom ChatGPT style doc search powered by Fresh, Deno, OpenAI, and Supabase.
 - [Fresh WordPress Themes](https://github.com/denoland/fresh-wordpress-themes) - This repository includes Fresh WordPress themes. You can start developing WordPress-backed Fresh website using these templates.
+- [athena](https://github.com/dext7r/athena.git) - Modern full stack development template
 
 ## Apps
 
